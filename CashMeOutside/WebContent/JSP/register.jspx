@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	<jsp:directive.page contentType="text/html; charset=ISO-8859-1"
+		pageEncoding="ISO-8859-1" session="false" />
+	<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+	<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Register form with HTML5 using placeholder and CSS3</title>
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/res/style.css"></link>
+</head>
+<body>
+	<div id="wrapper">
+		<form action="" method="post">
+			<fieldset>
+				<legend>Register Form</legend>
+				<div>
+					<label>Username:</label> <input type="text" name="username"
+						placeholder="Username" />
+				</div>
+				<div>
+					<label>First Name:</label> <input type="text" name="fname"
+						placeholder="First Name" />
+				</div>
+				<div>
+					<label>Last Name:</label> <input type="text" name="lname"
+						placeholder="Last Name" />
+				</div>
+				<div>
+					<label>Password:</label> <input type="password" name="password"
+						placeholder="Password" />
+				</div>
+				<div>
+					<label>Type:</label> <select name="type">
+						<option value="Customer">Customer</option>
+						<option value="Administrator">Administrator</option>
+						<option value="Partner">Partner</option>
+					</select>
+				</div>
+				<input type="submit" name="submit" value="Next" />
+			</fieldset>
+		</form>
+	</div>
+</body>
+	</html>
+</jsp:root>
